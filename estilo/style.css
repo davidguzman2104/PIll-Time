@@ -1,0 +1,355 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #E3F2FD 0%, #FFFFFF 100%);
+  }
+  
+  header {
+    background-color: #0D47A1;
+    padding: 0; /* Quitamos padding vertical para control total */
+    height: 150px; /* O la altura que desees */
+    display: flex;
+    align-items: center; /* Centra verticalmente el contenido */
+  }
+  
+  .navbar {
+    width: 100%;
+  }
+  
+  .navbar-brand img {
+    max-height: 120px; /* El logo nunca crecerá más que esto */
+    height: auto;
+    margin-right: 10px;
+  }
+  .navbar-nav .nav-link {
+    color: white !important;
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  #carouselExample img {
+    height: 450px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 16px;
+    background-color: #E3F2FD; /* fondo para evitar que se vea vacío */
+  }
+  h2 {
+    font-weight: 700;
+  }
+  
+  .card-benefit {
+    background: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-benefit:hover {
+    transform: translateY(-5px);
+  }
+
+  .card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.download-app-container h3 {
+  margin-bottom: 20px;
+  color: #0D47A1;
+  font-weight: bold;
+}
+
+.pill {
+  background-color: #0D47A1;
+  border-radius: 50px;
+  padding: 15px 30px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  position: relative;
+  width: 220px;
+  max-width: 90vw;
+}
+
+.pill.open {
+  padding: 30px 20px;
+  border-radius: 25px;
+  background-color: #1976D2;
+  width: auto;
+  max-width: 300px;
+}
+
+.pill-label {
+  display: block;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+}
+
+.qr-content {
+  margin-top: 15px;
+  transition: opacity 0.4s ease;
+}
+
+.qr-img {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Pildoritas */
+.pill-particles {
+  position: relative;
+  height: 0;
+  margin-top: 10px;
+}
+
+.pill-particle {
+  width: 20px;
+  height: 10px;
+  background-color: #FFC107;
+  border-radius: 50px;
+  position: absolute;
+  animation: float 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.pill-particle:nth-child(1) {
+  left: 20%;
+  animation-delay: 0s;
+}
+
+.pill-particle:nth-child(2) {
+  left: 40%;
+  animation-delay: 0.1s;
+}
+
+.pill-particle:nth-child(3) {
+  left: 60%;
+  animation-delay: 0.2s;
+}
+
+.pill-particle:nth-child(4) {
+  left: 80%;
+  animation-delay: 0.3s;
+}
+
+.pill-particle:nth-child(5) {
+  left: 50%;
+  animation-delay: 0.4s;
+}
+.pill-rain {
+  position: fixed;
+  top: -40px;
+  font-size: 24px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    bottom: 40px;
+    opacity: 0;
+    transform: scale(1.2) rotate(45deg);
+  }
+}
+  #reviews-container .card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  footer {
+    background-color: #0D47A1; /* Azul oscuro también para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+/* Sistema de estrellas */
+#star-rating {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.star {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 0 3px;
+  color: #ccc; /* Color por defecto (estrellas no seleccionadas) */
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.star.fa-solid {
+  color: #FFD700 !important; /* Amarillo dorado para estrellas seleccionadas */
+}
+
+/* Contenedor de reseñas */
+#reviews-container .card {
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+#reviews-container .card:hover {
+  transform: translateY(-3px);
+}
+
+.stars.text-warning {
+  color: #FFD700;
+  letter-spacing: 2px;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.social-icons a {
+  color: #4a4a4a;
+  font-size: 24px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0D47A1; /* Color naranja tipo Headspace */
+  transform: scale(1.2);
+}
+.help-banner {
+  background-color: #0D47A1;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.help-banner h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.help-banner a {
+  color: white;
+  text-decoration: underline;
+}
+/* Estilos para el carrusel de reseñas */
+.reviews-carousel-container {
+  max-width: 100%;
+  padding: 0 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.reviews-carousel-inner {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease;
+  padding: 10px 0;
+}
+
+.reviews-track .card {
+  flex: 0 0 300px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 0;
+}
+
+.reviews-track .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Flechas de navegación */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  background-color: #FF0000;
+  border-radius: 50%;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: 0;
+}
+
+.carousel-control-next {
+  right: 0;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+  background-color: #FF0000;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .reviews-carousel-container {
+    padding: 0 30px;
+  }
+  
+  .reviews-track .card {
+    flex: 0 0 250px;
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews-carousel-container {
+    padding: 0 20px;
+  }
+  
+  .reviews-track .card {
+    flex: 0 0 220px;
+  }
+}

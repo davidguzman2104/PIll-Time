@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pill Time</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/logo.jpeg" alt="Pill Time Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#benefits">Beneficios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">¿Quiénes somos?</a></li>
+          <li class="nav-item"><a class="nav-link" href="#data">Datos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Descarga</a></li>
+          <li class="nav-item"><a class="nav-link" href="#reviews">Reseñas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container mt-5">
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded">
+        <div class="carousel-item active">
+          <img src="images/ejem1.jpeg" class="d-block w-100" alt="Imagen 1" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem2.jpeg" class="d-block w-100" alt="Imagen 2" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem3.jpeg" class="d-block w-100" alt="Imagen 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem4.jpeg" class="d-block w-100" alt="Imagen 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem5.jpeg" class="d-block w-100" alt="Imagen 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem6.jpeg" class="d-block w-100" alt="Imagen 3" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/ejem7.jpeg" class="d-block w-100" alt="Imagen 3" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <section id="benefits" class="container py-5"> 
+    <h2 class="text-center mb-5">Beneficios Esperados</h2>
+    <div class="row g-4">
+      <!-- Beneficio 1 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-bell fa-2x mb-3 text-primary"></i>
+          <h5>Recordatorios diarios</h5>
+          <p>No vuelvas a olvidar tomar tu medicamento.</p>
+        </div>
+      </div>
+      <!-- Beneficio 2 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-chart-line fa-2x mb-3 text-success"></i>
+          <h5>Seguimiento de salud</h5>
+          <p>Consulta tu historial y evolución fácilmente.</p>
+        </div>
+      </div>
+      <!-- Beneficio 3 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-mobile-alt fa-2x mb-3 text-info"></i>
+          <h5>Interfaz intuitiva</h5>
+          <p>Diseño moderno y fácil de usar para todas las edades.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 4 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-pills fa-2x mb-3 text-warning"></i>
+          <h5>Seguimiento en tiempo real</h5>
+          <p>Controla el tratamiento mientras ocurre.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 5 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-box-open fa-2x mb-3 text-danger"></i>
+          <h5>Alertas de stock</h5>
+          <p>Recibe notificaciones cuando se acaban tus medicamentos.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 6 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-notes-medical fa-2x mb-3 text-secondary"></i>
+          <h5>Historial compartible</h5>
+          <p>Comparte tu historial con profesionales de salud.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 7 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-shopping-cart fa-2x mb-3 text-success"></i>
+          <h5>Compra en farmacias</h5>
+          <p>Conecta directamente con farmacias físicas o en línea.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 8 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-lock fa-2x mb-3 text-primary"></i>
+          <h5>Privacidad protegida</h5>
+          <p>Tu información está segura y cifrada.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 9 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-brain fa-2x mb-3 text-info"></i>
+          <h5>Organización sin estrés</h5>
+          <p>Control total de tus tomas y tratamientos sin complicaciones.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 10 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-hands-helping fa-2x mb-3 text-warning"></i>
+          <h5>Apoyo a familiares</h5>
+          <p>Ayuda a tus seres queridos a seguir su tratamiento.</p>
+        </div>
+      </div>
+      <!-- Nuevo Beneficio 11 -->
+      <div class="col-md-4">
+        <div class="card card-benefit text-center p-4 h-100">
+          <i class="fas fa-microphone-alt fa-2x mb-3 text-danger"></i>
+          <h5>Control por voz</h5>
+          <p>Disponible en versión Premium con smartwatch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="about" class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">¿Quiénes somos?</h2>
+      <p>Somos una empresa comprometida con la salud digital, enfocados en ayudar
+        a las personas a tomar su medicamento en tiempo y forma. Desarrollamos <strong>Pill Time</strong>, una aplicación inteligente que ayuda a pacientes a
+        llevar un control preciso de sus medicamentos, mejorar la adherencia a
+        tratamientos.</p>
+    </div>
+  </section>
+
+  <section id="data" class="container py-5">
+    <h2 class="mb-4 text-center">Datos Estadísticos</h2>
+    <div class="row flex-column align-items-center">
+      <!-- Dato 1 -->
+      <div class="col-md-8 d-flex align-items-center mb-4">
+        <img src="images/adulto.jpg" alt="Adultos mayores" class="rounded-circle me-3" width="80" height="80">
+        <div>
+          <h3>+60%</h3>
+          <p>De adultos mayores olvidan tomar sus medicamentos correctamente.</p>
+        </div>
+      </div>
+      <!-- Dato 2 -->
+      <div class="col-md-8 d-flex align-items-center mb-4">
+        <img src="images/tiempo.jpg" alt="Usuarios activos" class="rounded-circle me-3" width="80" height="80">
+        <div>
+          <h3>95%</h3>
+          <p>Usuarios activos semanales</p>
+        </div>
+      </div>
+      <!-- Dato 3 -->
+      <div class="col-md-8 d-flex align-items-center mb-4">
+        <img src="images/medicamento.jpg" alt="Adherencia tratamiento" class="rounded-circle me-3" width="80" height="80">
+        <div>
+          <h3>80%</h3>
+          <p>Mejoran adherencia al tratamiento</p>
+        </div>
+      </div>
+      <!-- Dato 4 adicional -->
+      <div class="col-md-8 d-flex align-items-center mb-4">
+        <img src="images/app.jpg" alt="Mercado salud" class="rounded-circle me-3" width="80" height="80">
+        <div>
+          <p>El mercado global de apps de salud supera los USD $50 mil millones y sigue creciendo. En México, 4 de cada 10 personas con enfermedades crónicas no siguen correctamente su tratamiento médico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="download" class="bg-light py-5 text-center">
+    <div class="download-app-container text-center mt-5">
+      <h3>Descargar APP</h3>
+      <div id="pill" class="pill">
+        <div class="pill-content">
+          <span class="pill-label">📱 Tocar para abrir</span>
+          <div class="pill-particles d-none">
+            <div class="pill-particle"></div>
+            <div class="pill-particle"></div>
+            <div class="pill-particle"></div>
+            <div class="pill-particle"></div>
+            <div class="pill-particle"></div>
+          </div>
+          <div class="qr-content d-none">
+            <img src="images/qrcode.jpeg" alt="Código QR" class="qr-img">
+          </div>
+        </div>
+      </div>
+    </div>    
+  </section>
+
+  <section id="reviews" class="container py-5">
+    <h2 class="text-center mb-4">Reseñas</h2>
+  
+    <!-- Formulario de reseña -->
+    <form id="review-form" class="mb-4">
+      <div class="mb-3 text-center">
+        <label class="form-label">Tu calificación:</label>
+        <div class="mb-2">
+          <div id="star-rating" class="mb-3">
+            <i class="fa-regular fa-star star" data-value="1"></i>
+            <i class="fa-regular fa-star star" data-value="2"></i>
+            <i class="fa-regular fa-star star" data-value="3"></i>
+            <i class="fa-regular fa-star star" data-value="4"></i>
+            <i class="fa-regular fa-star star" data-value="5"></i>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <input type="text" id="reviewer-name" class="form-control" placeholder="Tu nombre" required />
+      </div>
+      <div class="mb-3">
+        <textarea id="review-text" class="form-control" rows="3" placeholder="Escribe tu opinión..." required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Enviar reseña</button>
+      </div>
+    </form>
+  
+    <!-- Contenedor de reseñas con carrusel -->
+    <div class="reviews-carousel-container position-relative">
+      <button class="carousel-control-prev position-absolute start-0 top-50 translate-middle-y bg-dark rounded-circle p-3 border-0" type="button" id="reviews-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      
+      <div class="reviews-carousel-inner overflow-hidden">
+        <div class="reviews-track d-flex flex-nowrap gap-3" id="reviews-track">
+          <!-- Ejemplo de reseñas precargadas -->
+          <div class="card flex-shrink-0" style="width: 300px;">
+            <div class="card-body">
+              <strong>Ana G.</strong>
+              <div class="stars text-warning">★★★★☆</div>
+              <p class="mt-2">Me encanta Pill Time, me recuerda siempre mis medicinas sin fallar.</p>
+            </div>
+          </div>
+          <div class="card flex-shrink-0" style="width: 300px;">
+            <div class="card-body">
+              <strong>Luis R.</strong>
+              <div class="stars text-warning">★★★★★</div>
+              <p class="mt-2">Muy útil para mi abuelita, ya no se le olvida tomar sus pastillas.</p>
+            </div>
+          </div>
+          <div class="card flex-shrink-0" style="width: 300px;">
+            <div class="card-body">
+              <strong>María S.</strong>
+              <div class="stars text-warning">★★★★★</div>
+              <p class="mt-2">La mejor app para recordatorios de medicamentos que he usado.</p>
+            </div>
+          </div>
+          <div class="card flex-shrink-0" style="width: 300px;">
+            <div class="card-body">
+              <strong>Carlos M.</strong>
+              <div class="stars text-warning">★★★☆☆</div>
+              <p class="mt-2">Funciona bien, pero me gustaría más personalización.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-next position-absolute end-0 top-50 translate-middle-y bg-dark rounded-circle p-3 border-0" type="button" id="reviews-next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <div id="contact"class="help-banner">
+    <h2>¿Necesitas ayuda?</h2>
+    <p>Estamos para ayudarte en <a href="pill.time00@gmail.com">pill.time00@gmail.com</a></p>
+  </div>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/pill_time00/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1BjDbdLGeZ/?mibextid=qi2Omg" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+  </div>
+  
+  <footer>
+    <p>&copy; 2025 Pill Time - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="Script/script.js"></script>
+</body>
+</html>
